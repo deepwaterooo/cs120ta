@@ -1,0 +1,152 @@
+% Created 2014-09-25 Thu 10:35
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage[CJKbookmarks=true]{hyperref}
+%% Define a museincludegraphics command, which is
+%%   able to handle escaped special characters in image filenames.
+\def\museincludegraphics{%
+  \begingroup
+  \catcode`\|=0
+  \catcode`\\=12
+  \catcode`\#=12
+  \includegraphics[width=0.75\textwidth]
+}
+\usetheme{default}
+\author{Heyan Huang}
+\date{\today}
+\title{CS120 Lab \alert{4} Section \alert{6}}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.3.1 (Org mode 8.2.7c)}}
+\begin{document}
+
+\maketitle
+
+\begin{frame}[fragile,label=sec-1]{Quiz for Week 3 \alert{Answers}}
+ \begin{itemize}
+\item In C++ a library is a file containing code that can be used in other programs.
+
+What't the difference between a \alert{library} and a \alert{header} ?
+
+\url{http://stackoverflow.com/questions/924485/whats-the-difference-between-a-header-file-and-a-library}
+
+\begin{verbatim}
+#include<stdio.h>
+main() {
+    printf("haiii"); 
+}
+\end{verbatim}
+\begin{itemize}
+\item \alert{header} file: interface
+\begin{itemize}
+\item contains the function (printf) declaration;
+\item during preprocessing, the printf function is replaced by the function declaration;
+\end{itemize}
+\item \alert{library} file: implementation
+\begin{itemize}
+\item contains the function (printf) definition;
+\item during linking, the fucntion declaration is replaced with the function definition. Obviously, everything will be in object while linking.
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-2]{Quiz for Week 3 \alert{Answers} (continue)}
+ \begin{itemize}
+\item A conditional is used in a program to control whether or not a piece of code is executed.
+
+To be exact, instead of "\alert{a piece of code}", it's "\alert{a block of code}".
+
+\item The following code snippet will print It¡¯s true. (Type Conversion)
+\begin{verbatim}
+int x = 15;
+if(x + 20 > 2 * x){
+    cout << "It's true";
+}
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-3]{Quiz for Week 3 \alert{Answers} (continue)}
+ \begin{itemize}
+\item The following code snippet will print the word here exactly ten times.
+\begin{verbatim}
+int x = 0;
+while (x<10) {
+    cout << "here";
+}
+\end{verbatim}
+Missed the \alert{x += 1;} or \alert{x = x + 1;} statement part;
+
+\item The following code snippet will print the value 2.
+\begin{verbatim}
+int x = 25;
+double y = 10;
+cout << x/y;
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-4]{\alert{Quiz Week 3} Scores Distribution}
+\begin{itemize}
+\item \alert{Quiz for Week 3} Distribution
+\end{itemize}
+\begin{center}
+\begin{tabular}{lrrrrr}
+\hline
+Score & 2 & 3 & 4 & 5 & Missed\\
+\hline
+Section \alert{4} Count (22) & 0 & 4 & \alert{12} & 5 & 1\\
+\hline
+Section \alert{6} Count (24) & \alert{2} & 4 & 4 & \alert{10} & 4\\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{itemize}
+\item \alert{Lab 2} \& \alert{Assignment 2 \& 3}: Haven't got access yet, zipped file was filtered out by UI mail system yesterday;
+\item \alert{Lab 3}: Got grading criteria this morning;
+\item \alert{Lab 3}, \alert{Quiz Week 4} will be handed back during coming lab for sure;
+\item Will get these cscheckin files on hand and grade them as soon as possible.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-5]{Lab 4 Specific Requirements}
+\begin{itemize}
+\item \alert{cscheckin}:
+\begin{itemize}
+\item \alert{Source Programs} only, with \alert{file names} specifically named to be: 
+\begin{itemize}
+\item \alert{piLab4Section4.cpp}
+\item \alert{eLab4Section4.cpp}
+\end{itemize}
+\end{itemize}
+\item \alert{Hard Copy}:
+\begin{itemize}
+\item \alert{Source Programs}
+\item \alert{Outputs} of the programs
+\end{itemize}
+\end{itemize}
+\end{frame}
+% Emacs 24.3.1 (Org mode 8.2.7c)
+\end{document}

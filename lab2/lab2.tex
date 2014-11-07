@@ -1,0 +1,147 @@
+% Created 2014-09-11 Èç•õ 10:43
+\documentclass[11pt]{beamer}
+
+      \mode<{{{beamermode}}}>
+
+      \usetheme{{{{beamertheme}}}}
+
+      \usecolortheme{{{{beamercolortheme}}}}
+
+      \beamertemplateballitem
+
+      \setbeameroption{show notes}
+      \usepackage[utf8]{inputenc}
+
+      \usepackage[T1]{fontenc}
+
+      \usepackage{hyperref}
+
+      \usepackage{color}
+      \usepackage{listings}
+      \lstset{numbers=none,language=[ISO]C++,tabsize=4,
+  frame=single,
+  basicstyle=\small,
+  showspaces=false,showstringspaces=false,
+  showtabs=false,
+  keywordstyle=\color{blue}\bfseries,
+  commentstyle=\color{red},
+  }
+
+      \usepackage{verbatim}
+
+      \institute{{{{beamerinstitute}}}}
+          
+       \subject{{{{beamersubject}}}}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage[CJKbookmarks=true]{hyperref}
+%% Define a museincludegraphics command, which is
+%%   able to handle escaped special characters in image filenames.
+\def\museincludegraphics{%
+  \begingroup
+  \catcode`\|=0
+  \catcode`\\=12
+  \catcode`\#=12
+  \includegraphics[width=0.75\textwidth]
+}
+\author{Heyan Huang}
+\date{\today}
+\title{CS120 Lab 2}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.3.50.1 (Org mode 8.2.5h)}}
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+
+\section{CS120 Lab 2}
+\label{sec-1}
+\begin{frame}[fragile]\frametitle{Notes \& Lab1}
+\label{sec-1-1}
+\begin{itemize}
+\item Appologize: 
+\begin{itemize}
+\item No \textbf{hard copy} after Assignment 1;
+\item \textbf{cscheckin} version required;
+\end{itemize}
+\item Lab1 Distribution
+\end{itemize}
+\begin{center}
+\begin{tabular}{lrrr}
+\hline
+S core & 8 & 9 & 10\\
+\hline
+Count (19) & 12 & 1 & 6\\
+\hline
+\end{tabular}
+\end{center}
+\begin{itemize}
+\item \textbf{Comment} your code when it's necessary
+\item \textbf{Indent}, Format the code file
+\begin{itemize}
+\item By default, for c++/c file, tab = 4 space
+\end{itemize}
+\item \textbf{Source code} example: \textbf{lab1.cpp}
+\begin{itemize}
+\item comment
+\item indent
+\item space format around operator
+\end{itemize}
+\item nano keyboard commands:
+\begin{itemize}
+\item \url{http://staffwww.fullcoll.edu/sedwards/Nano/UsefulNanoKeyCommands.html}
+\item From this lab, I begin to use \textbf{Emacs}
+\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}[fragile]\frametitle{cmath library}
+\label{sec-1-2}
+\begin{itemize}
+\item cmath library Functions
+\url{http://www.cplusplus.com/reference/cmath/}
+\begin{itemize}
+\item pow(base, exponent): Returns base raised to the power exponent;
+\item sqrt(x): Returns the square root of x;
+\end{itemize}
+\end{itemize}
+\begin{center}
+\begin{tabular}{llll}
+\hline
+Powre & Exponetnial & Trigonometric & Rounding\\
+Functions & Functions & Functions & Remainder\\
+\hline
+pow & exp & cos & ceil\\
+sqrt & log & sin & floor\\
+ &  & tan & trunc\\
+\hline
+\end{tabular}
+\end{center}
+\begin{itemize}
+\item try to remember the library names
+\item try to remember the popular functions within each library
+\end{itemize}
+\end{frame}
+% Emacs 24.3.50.1 (Org mode 8.2.5h)
+\end{document}

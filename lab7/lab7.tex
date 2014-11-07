@@ -1,0 +1,254 @@
+% Created 2014-10-16 Thu 12:23
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage[CJKbookmarks=true]{hyperref}
+%% Define a museincludegraphics command, which is
+%%   able to handle escaped special characters in image filenames.
+\def\museincludegraphics{%
+  \begingroup
+  \catcode`\|=0
+  \catcode`\\=12
+  \catcode`\#=12
+  \includegraphics[width=0.75\textwidth]
+}
+\usetheme{default}
+\author{Heyan Huang}
+\date{\today}
+\title{CS120 Lab \alert{7} Section \alert{6}}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.3.1 (Org mode 8.2.7c)}}
+\begin{document}
+
+\maketitle
+
+\begin{frame}[fragile,label=sec-1]{Quiz for Week 6 \alert{Answers}}
+ All of the following questions are based on the class position, which is defined as:
+\begin{verbatim}
+class position {
+private:
+    int x;
+    int y;
+public:
+    int distance();
+};
+\end{verbatim}
+\begin{itemize}
+\item Write the code to declare a single object named \alert{center} of type position:
+
+\alert{position center;}
+\item Write code to have the object named center call the \alert{distance()} function.
+
+\alert{center.distance();}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-2]{Quiz for Week 6 \alert{Answers} (continued)}
+ All of the following questions are based on the class position, which is defined as:
+\begin{verbatim}
+class position {
+private:
+    int x;
+    int y;
+public:
+    int distance();
+};
+\end{verbatim}
+\begin{itemize}
+\item What are the data members of the class?
+
+\alert{x and y.}
+\item What are the member functions (methods) of the class?
+
+\alert{distance().}
+\item If there was a constructor function for this class, what would the name of the function be?
+
+\alert{position()}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-3]{Quiz for Week 7 \alert{Answers}}
+ (5 pt) Answer the following questions based on the following array declaration:
+\begin{verbatim}
+int hand[5];
+\end{verbatim}
+\begin{itemize}
+\item How many elements (pieces of data) can the array hand store?
+Answer: \alert{5}
+
+\alert{Declare} an array: 
+
+int \alert{arrayName} [ \alert{lengthOfArray} ]; 
+
+and \alert{int} is arrayName's \alert{Data Type}.
+\end{itemize}
+\\
+\begin{itemize}
+\item The index of the \alert{first element} of the array?
+
+Answer: \alert{0}
+
+Array indices are \alert{0-based}.
+\end{itemize}
+\\
+
+\begin{itemize}
+\item What is the index of the \alert{last element} of the array?
+
+Answer: \alert{4}
+
+Since array indices are \alert{0-based}, index of the \alert{last} element of the array comes out to be \alert{lengthOfArray - 1}.
+\end{itemize}
+
+\\
+\end{frame}
+
+\begin{frame}[fragile,label=sec-4]{Quiz for Week 7 \alert{Answers} (continued)}
+ (5 pt) Answer the following questions based on the following array declaration:
+\begin{verbatim}
+int hand[5];
+\end{verbatim}
+\begin{itemize}
+\item Write a line of code to assign the second element of the array the value 7.
+
+Answer: \alert{hand[ 1 ] = 7;}
+
+Since array indices are \alert{0-based}, index of the \alert{second} element of the array comes out to be \alert{2 - 1}, and continue\ldots{}
+\end{itemize}
+\\
+\begin{itemize}
+\item Write a line of code to print the last element of the array.
+
+Answer: \alert{cout << hand[ 4 ];}
+
+Since array indices are \alert{0-based}, index of the \alert{last} element of the array comes out to be \alert{lengthOfArray - 1}, and continue\ldots{}
+\end{itemize}
+\\
+\end{frame}
+
+\begin{frame}[label=sec-5]{Scores of Quiz Week 6}
+\\
+\begin{itemize}
+\item \alert{Lab 5} Score Distribution
+\end{itemize}
+\begin{center}
+\begin{tabular}{lrrrrr}
+\hline
+Score & 8.5 & 9 & 9.5 & 10 & Missed\\
+\hline
+Section \alert{4} Count (22) & 1 & 2 & 8 & 9 & 2\\
+\hline
+Section \alert{6} Count (24) & 0 & 10 & 0 & 3 & 11\\
+\hline
+\end{tabular}
+\end{center}
+\\
+\begin{itemize}
+\item \alert{Quiz for Week 6} Distribution:
+\end{itemize}
+\begin{center}
+\begin{tabular}{lrrrrrrr}
+\hline
+Score & 0 & 1 & 2 & 3 & 4 & 5 & Missed\\
+\hline
+Section \alert{4} Count (22) & 1 & 1 & 3 & 7 & 5 & 3 & 2\\
+\hline
+Section \alert{6} Count (24) & 0 & 0 & 2 & 9 & 3 & 3 & 7\\
+\hline
+\end{tabular}
+\end{center}
+\\
+\begin{itemize}
+\item \alert{Lab 6} Score Distribution
+\end{itemize}
+\begin{center}
+\begin{tabular}{lrrrrr}
+\hline
+Score & 9 & 11 & 12 & 13 & Missed\\
+\hline
+Section \alert{4} Count (22) & 0 & 1 & 8 & 11 & 2\\
+\hline
+Section \alert{6} Count (24) & 2 & 2 & 1 & 9 & 10\\
+\hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}[label=sec-6]{Lab 6 Randome Number Generator}
+\begin{itemize}
+\item \#include < \alert{cstdlib} >
+\end{itemize}
+\\
+\begin{itemize}
+\item Prototype: \alert{int rand (void);}
+\item This number is generated by an algorithm that returns a sequence of apparently non-related numbers each time it is called.
+\item Returns a pseudo-random integral number in the range between 0 and RAND\textunderscore MAX.
+\item RAND\textunderscore MAX is a constant defined in <cstdlib>.
+\end{itemize}
+\\
+\begin{itemize}
+\item Examples:
+\begin{itemize}
+\item v1 = rand() \% 100;
+\item v2 = rand() \% 100 + 1;
+\item v3 = rand() \% 30 + 1985;
+\end{itemize}
+\end{itemize}
+\\ 
+\begin{itemize}
+\item Seed
+\begin{itemize}
+\item This algorithm uses a seed to generate the series, which should be initialized to some distinctive value using function srand.
+\item \emph{* initialize random seed: *}
+
+\alert{srand (time(NULL));}
+\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}[label=sec-7]{Lab 6 Specific Requirements}
+\begin{itemize}
+\item \alert{cscheckin}:
+\begin{itemize}
+\item \alert{Source Program} only
+\item program name: \alert{Lab7Sec6.cpp}
+\end{itemize}
+\end{itemize}
+\\
+\begin{itemize}
+\item \alert{Hard Copy}:
+\begin{itemize}
+\item \alert{Source Program}: \alert{Lab7Sec6.cpp}
+\item \alert{Script Output} of the program:
+\end{itemize}
+\end{itemize}
+\\
+\begin{itemize}
+\item \alert{Extra Credits}:
+\begin{itemize}
+\item \alert{Extra Work} are required in order to extra points.
+\item It won't be easy to get all \alert{3} extra credits, so make sure you make effort to earn them.
+\end{itemize}
+\end{itemize}
+\end{frame}
+% Emacs 24.3.1 (Org mode 8.2.7c)
+\end{document}

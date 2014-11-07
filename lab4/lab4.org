@@ -1,0 +1,82 @@
+#+title: CS120 Lab *4* Section *6*
+#+author: Heyan Huang
+#+startup: beamer
+#+latex_class: beamer
+#+options: H:1 num:t toc:nil
+
+* Quiz for Week 3 *Answers*
+- In C++ a library is a file containing code that can be used in other programs.
+
+  What't the difference between a *library* and a *header* ?
+
+  http://stackoverflow.com/questions/924485/whats-the-difference-between-a-header-file-and-a-library
+  
+  #+begin_src
+#include<stdio.h>
+main() {
+    printf("haiii"); 
+} 
+  #+end_src
+  - *header* file: interface
+      - contains the function (printf) declaration;
+      - during preprocessing, the printf function is replaced by the function declaration;
+  - *library* file: implementation
+      - contains the function (printf) definition;
+      - during linking, the fucntion declaration is replaced with the function definition. Obviously, everything will be in object while linking. 
+
+* Quiz for Week 3 *Answers* (continue)
+- A conditional is used in a program to control whether or not a piece of code is executed.
+
+  To be exact, instead of "*a piece of code*", it's "*a block of code*".
+  
+- The following code snippet will print It¡¯s true. (Type Conversion)
+  #+begin_src
+int x = 15;
+if(x + 20 > 2 * x){
+    cout << "It's true";
+}
+  #+end_src
+
+* Quiz for Week 3 *Answers* (continue)
+
+- The following code snippet will print the word here exactly ten times.
+  #+begin_src
+int x = 0;
+while (x<10) {
+    cout << "here";
+}
+  #+end_src
+  Missed the *x += 1;* or *x = x + 1;* statement part;
+
+- The following code snippet will print the value 2.
+  #+begin_src
+int x = 25;
+double y = 10;
+cout << x/y;
+  #+end_src
+
+* *Quiz Week 3* Scores Distribution
+- *Quiz for Week 3* Distribution
+|------------------------+---+---+----+----+--------|
+| Score                  | 2 | 3 |  4 |  5 | Missed |
+|------------------------+---+---+----+----+--------|
+| Section *4* Count (22) | 0 | 4 | *12* |  5 |      1 |
+|------------------------+---+---+----+----+--------|
+| Section *6* Count (24) | *2* | 4 |  4 | *10* |      4 |
+|------------------------+---+---+----+----+--------|
+
+- *Lab 2* & *Assignment 2 & 3*: Haven't got access yet, zipped file was filtered out by UI mail system yesterday;
+- *Lab 3*: Got grading criteria this morning;
+- *Lab 3*, *Quiz Week 4* will be handed back during coming lab for sure;
+- Will get these cscheckin files on hand and grade them as soon as possible.
+
+* Lab 4 Specific Requirements
+- *cscheckin*:
+    - *Source Programs* only, with *file names* specifically named to be: 
+      - *piLab4Section4.cpp*
+      - *eLab4Section4.cpp*
+- *Hard Copy*:
+    - *Source Programs*
+    - *Outputs* of the programs
+
+      

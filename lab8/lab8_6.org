@@ -1,0 +1,207 @@
+#+title: CS120 Lab *8* Section *6*
+#+author: Heyan Huang
+#+startup: beamer
+#+latex_class: beamer
+#+options: H:1 num:t toc:nil
+
+* Quiz for Week 7 *Answers* 
+  (5 pt) Answer the following questions based on the following array declaration:
+  #+begin_src
+int hand[5];
+  #+end_src
+  - How many elements (pieces of data) can the array hand store?
+    Answer: *5*
+
+    *Declare* an array: 
+
+      int *arrayName* [ *lengthOfArray* ]; 
+
+    and *int* is arrayName's *Data Type*.
+\\
+  - The index of the *first element* of the array?
+
+    Answer: *0*
+
+    Array indices are *0-based*.
+\\
+
+  - What is the index of the *last element* of the array?
+
+    Answer: *4*
+
+    Since array indices are *0-based*, index of the *last* element of the array comes out to be *lengthOfArray - 1*.
+
+\\
+
+* Quiz for Week 7 *Answers* (continued)
+  (5 pt) Answer the following questions based on the following array declaration:
+  #+begin_src
+int hand[5];
+  #+end_src
+  - Write a line of code to assign the second element of the array the value 7.
+
+    Answer: *hand[ 1 ] = 7;*
+
+    Since array indices are *0-based*, index of the *second* element of the array comes out to be *2 - 1*, and continue...
+\\
+  - Write a line of code to print the last element of the array.
+
+    Answer: *cout << hand[ 4 ];*
+
+    Since array indices are *0-based*, index of the *last* element of the array comes out to be *lengthOfArray - 1*, and continue...
+\\
+
+* Quiz for Week 8 *Answers* 
+  (5 pt) Answer the following questions based on the following class declaration:
+  #+begin_src
+class circle {
+  public:
+    void print();
+  private:
+    int x;
+    int y;
+    float radius;
+};
+  #+end_src
+
+- Write the code for a default constructor of the class circle that sets the location (x,y) to 0,0 and the radius to 1.
+  #+begin_src
+circle::circle() {
+    x = 0;
+    y = 0;
+    radius = 1.0;
+}
+  #+end_src
+
+* Quiz for Week 8 *Answers* (continued)
+
+  #+begin_src
+class circle {
+  public:
+    void print();
+  private:
+    int x;
+    int y;
+    float radius;
+};
+  #+end_src
+- Write the code for the print() function so that circles are printed as: 
+
+  *A circle at x,y has radius r* 
+
+  Where x, y, and r are the values for the circle object.
+
+  #+begin_src
+void circle::print() {
+    cout << "A circle at " << x << ", " << y
+         << " has radius " << radius << endl;
+}
+  #+end_src
+
+* Quiz for Week 8 *Answers* (continued)
+
+  #+begin_src
+class circle {
+  public:
+    void print();
+  private:
+    int x;
+    int y;
+    float radius;
+};
+  #+end_src
+- Write the statement(s) to create an array of 100 circles.
+
+    *circle whatEverArrayNameHere[ 100 ];*
+- Write the statement(s) to print the 3rd object in the array of question 3.
+
+    *whatEverArrayNameHere[ 2 ].print();*
+- Write the statement(s) to print the last object in the array of question 3.
+
+    *whatEverArrayNameHere[ 99 ].print();*
+
+* Scores of Quiz Week 7
+\\
+- *Quiz for Week 7* Distribution:
+|------------------------+---+---+---+---+---+---+--------|
+| Score                  | 0 | 1 | 2 | 3 | 4 | 5 | Missed |
+|------------------------+---+---+---+---+---+---+--------|
+| Section *4* Count (22) | 0 | 0 | 7 | 6 | 1 | 4 |      4 |
+|------------------------+---+---+---+---+---+---+--------|
+| Section *6* Count (24) | 1 | 2 | 1 | 5 | 4 | 3 |      8 |
+|------------------------+---+---+---+---+---+---+--------|
+\\
+- *Lab 7*:
+
+  - I have not got the grading criteria yet. 
+  - Will hand back to you as soon as I grade them. 
+
+* Emacs
+- The reason why I like Emacs:
+  - Emacs is an *operating system*;
+  - Just like iphone/ipad changed human being's life, emacs *makes programmer's life so much easier~!*
+  - Most popular packages: 
+    - *autocomplete*
+    - *yasnippet*
+    - *org-mode*
+    - autopair
+    - AUCTex
+- Personal Experience:
+  - when I took CS120 we don't have labs at all, and I have never been exposed to *emacs* or *vim* command based editors;
+  - From my experience, I hope you guys can be exposed to these command-based editors *as soon as possible*. 
+- Contents that will be covered in this lab:
+  - *basic commands* that emacs programmers use every day; 
+  - one line *configuration* for line number
+
+* Emacs Basic Commands
+- google "*Emacs cheat sheet*"
+- Motion
+|--------------------------+----------+---------|
+| entity to move over      | backward | forward |
+|--------------------------+----------+---------|
+| character                | C-b      | C-f     |
+| word                     | M-b      | M-f     |
+| line                     | C-p      | C-n     |
+| go to line beginning/end | C-a      | C-e     |
+|--------------------------+----------+---------|
+- other commands   
+|-----------------------------+--------------|
+| search forward              | C-s          |
+| search backward             | C-r          |
+| scroll to next screen       | C-v          |
+| scroll to previous screen   | M-v          |
+| goto line                   | M-g g        |
+| set mark here               | C-SPC or C-@ |
+| copy region to kill ring    | M-w          |
+| yank back last thing killed | C-y          |
+|-----------------------------+--------------|
+
+* Emacs configure *Line Number*
+- command option
+  - works for current buffer
+  - commands: *M-x linum-mode RET*
+- permanent configuration in home directory
+  - go to home directory: *pwd* ----> */home/huan3416*
+  - *man ls*, check *-a*, *-l*, *-t* options; type *q* to quit from *man* results
+  - *ls -a*: check if there is an emacs configuration file named *.emacs*
+  - If not, create *.emacs* file by typing *emacs .emacs* in terminal
+  - type *(global-linum-mode 1)* in the file
+  - *C-x C-s* to *save* the file
+  - *C-x C-c* to *exit* from emacs
+- later on when you have questions, please try to use *emacs*, or if you prefer to use *vim*
+
+* Lab 8 Specific Requirements
+- *cscheckin*:
+    - *Source Programs* only
+      - *fraction.h*
+      - *fraction.cpp*
+      - *man tar* check for *-c*, *-v*, *-f* options
+      - *tar* programs command:
+
+        *tar -cvf Lab8Sec6.zip fraction.h fraction.cpp*
+\\
+- *Hard Copy*:
+    - *Source Program*: *Lab8Sec6.zip*
+      - fraction.h 
+      - fraction.cpp
+    - *Script Output* of the program

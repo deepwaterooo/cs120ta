@@ -1,0 +1,33 @@
+#+title: CS120 Lab *9* Section *4*
+#+author: Heyan Huang
+#+startup: beamer
+#+latex_class: beamer
+#+options: H:1 num:t toc:nil
+
+* Hello Emeth, 
+  
+  I went to friend's invitation for dinner last night and came back late and tired. Sorry for the late response. 
+  
+  I think you thought too much and made it such a big deal at it. To be honest, I barely remember anything you said during the meeting on Friday. And I always believe that as far as a person doesn't lie, the person is the judge for himself to decide if he needs to say sorry or not. And if you don't feel you did anything bad or it was not your attention, you don't have to be forced to say sorry to me by the environment force or whatever reason. In western culture, I know many people believe in God; In our country, we don't have that many people believe in God, but our culture does believe that a person is born to have all kinds of good inborn personality/nature deep inside the mind. 
+  
+  And if I stand even further away, sincerely,  you could potentially hurt your partner, but how could you hurt me? So no worries, please. 
+  
+  It is the fact the I have some accent, and unfortunately that's because I have very bad hearing. When I was a kid, I cried too much too frequently that my ears were sick for years. It was until last fall Dr. Krings' Data Communication course that I realize I had bad hearing. On average my classmates can hear up to 15/16 kHz frequency sounds, but I can hear only up to 7 or 8 kHz. And that makes it even difficult to pronounce correct with identifying pronouncing mouse shapes. It is a fact for me, and that's the reason I try to be considerate and always take my time to prepare slides before lab for the students in case they have difficulty, and at least they could still take a look and read the slides. 
+  
+  We have take cs121 data structure course by Dr. Bolden back in Fall 2012 together with your partner, cs543 advance operating system this spring by Dr. Rinker, and cs480 senior design for this fall semester. As an American native girl, with all the language benefits you have, you always brought laughter to the classroom. And just as I said to you the first day when I realize that we are going to share the same office this semester, I like you as a friend and please do not think too much and made it too serious. 
+  
+  Sincerely, 
+  
+  Heyan  
+  
+* Im sorry
+  Thompson, Emeth (thom5468@vandals.uidaho.edu)
+  Sent:	Saturday, November 01, 2014 6:09 PM
+  To:	
+  Huang, Heyan (heyanh@vandals.uidaho.edu)
+  Hello Heyan,
+  
+  I'm very sorry that yesterday I mentioned that one of your students was very upset about your accent during the meeting. I know that you are capable of teaching and I feel bad that I ever said anything. Not being able to be understood is very frustrating and I know you are trying very hard. I wish I could take back what I said during the meeting because I know it made you uncomfortable and that was not my intention. I was trying to make a point that the assignment might have been too long for one week and students are getting very stressed out about it.  I hope that you can forgive me and we can continue to work together without any bad feelings.
+  
+  Sincerly,
+  Emeth Thompson

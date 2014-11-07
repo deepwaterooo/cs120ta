@@ -1,0 +1,72 @@
+#+Title: CS120 Lab 1
+#+AUTHOR: Heyan Huang
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+MACRO: BEAMERMODE presentation
+#+MACRO: BEAMERTHEME Antibes
+#+MACRO: BEAMERCOLORTHEME lily
+#+MACRO: BEAMERSUBJECT RMRF
+#+MACRO: BEAMERINSTITUTE Miskatonic University, Astrology Dept.
+
+* CS120 Lab 1
+** Introduce Myself
+- Name: *Heyan Huang*
+- Major: Statistics & *Computer Science*
+- Experience: OPT Statistical industry experience, & 2 years cs course study, I like Emacs editor;
+- Contact Email: *heyanh@vandals.uidaho.edu*
+- Technical Help: *211 CSAC*, mainly MTWF hours, try to find me there~~!!
+
+** Overview
+   1. Lab Style & Time Scheduling
+   2. Programming Environment Introcution
+   3. Sample Program
+      
+** Lab Style & Time Scheduling
+- Labs are due at the *end of lab*; Homeworks are due on *followed Monday*;
+- At the beginning of the lab, you will have short answer *quizs*;
+- When turn in labs & homeworks, at least *electronic versions* are required, and hard copy as an extra; 
+- Electronic copy can be checked in through our cs server - wormulon "*cscheckin*" command. You will just need to specify your turn-in *filename* and *course folder*, which should be cs120.
+
+** Lab Style & Time Scheduling
+- I promote *independent & inspiring thinking*. I will try to answer extrodinary Questions with short answer and specify the fact that it's not required for current course. But you are free to ask questions with consideration for other students. 
+- If all of you are doing labs and homeworks before time and very good, I will be more than happy to teach you some other useful skills, like introducing *Emacs editor*, including some practical *interview questions* and coding in the lab section. 
+- If you have difficulty with lab or homework, I am willing to help in CSAC, and feel happy to see you make progress.
+
+**  Programming Environment Introcution
+
+1) Use *putty* to log into *wormulon.cs.uidaho.edu*. Use your *Vandal Username* and *password* to log on.
+2) Use the *mkdir* command to create a directory called *labs*.
+3) Use the *cd* command to move into the new *labs* directory.
+4) Use emacs/nano to create a file called *fortune.cpp* and write the Fortune Teller program in the file. Add a block of comments to the beginning of the program that lists your name, section number, date, and the assignment number.
+5) Use *g++* to compile the Fortune Teller program. You may need to type *./a.out* to run the program.
+
+**  Sample Program
+6) Make the following modifications to the Fortune Teller program: Print a *welcome message* at the beginning of the program; Change the program so that the fortunes are *different*. *Make up your own fortunes*, try to keep them interesting.
+7) Once the Fortune Teller program with your modifications is working properly, use the *script* (make typescript of terminal session) command to create a printable output file. The command *script lab1output* will create a file called *lab1output*.
+8) Once the script is started run the Fortue Teller program, then use the commands *pwd* and *ls* to show the current directory and its contents. Finally, use the exit command to end the script.
+9) You should now have a file called fortune.cpp containing the Fortune Teller program and a file called lab1output containing a 'transcript' of you running the Fortune Teller program and the pwd and ls commands. Print both files (using the *lpr* command) and turn them in.
+
+** Graphics
+
+*** a picture
+
+*** another picture
+#+LaTeX:\includegraphics{mro.jpg}
+
+** More interesting stuff
+
+*** some C++ code
+#+Begin_latex
+\begin{lstlisting}[language=c]
+for (int i = 1; i != 10; ++i) 
+    std::cout << i << ": hello, world!"
+              << std::endl;
+\end{lstlisting}
+#+end_latex
+
+*** and some Python...
+
+\begin{lstlisting}[language=python]
+for i in range(1,10):
+        print i, "hello, world!"
+\end{lstlisting}

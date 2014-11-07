@@ -1,0 +1,49 @@
+#+Title: CS120 Lab 2
+#+AUTHOR: Heyan Huang
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+MACRO: BEAMERMODE presentation
+#+MACRO: BEAMERTHEME Antibes
+#+MACRO: BEAMERCOLORTHEME lily
+#+MACRO: BEAMERSUBJECT RMRF
+#+MACRO: BEAMERINSTITUTE Miskatonic University, Astrology Dept.
+#+OPTIONS: H:2
+
+* CS120 Lab 2
+** Notes & Lab1
+- Appologize: 
+    - No *hard copy* after Assignment 1;
+    - *cscheckin* version required;
+- Lab1 Distribution
+|------------+----+---+----|
+| S core     |  8 | 9 | 10 |
+|------------+----+---+----|
+| Count (19) | 12 | 1 |  6 |
+|------------+----+---+----|
+- *Comment* your code when it's necessary
+- *Indent*, Format the code file
+    - By default, for c++/c file, tab = 4 space
+- *Source code* example: *lab1.cpp*
+    - comment
+    - indent
+    - space format around operator
+- nano keyboard commands:
+    - http://staffwww.fullcoll.edu/sedwards/Nano/UsefulNanoKeyCommands.html
+    - From this lab, I begin to use *Emacs*
+
+** cmath library
+- cmath library Functions
+  http://www.cplusplus.com/reference/cmath/
+    - pow(base, exponent): Returns base raised to the power exponent;          
+    - sqrt(x): Returns the square root of x;
+|-----------+-------------+---------------+-----------|
+| Powre     | Exponetnial | Trigonometric | Rounding  |
+| Functions | Functions   | Functions     | Remainder |
+|-----------+-------------+---------------+-----------|
+| pow       | exp         | cos           | ceil      |
+| sqrt      | log         | sin           | floor     |
+|           |             | tan           | trunc     |
+|-----------+-------------+---------------+-----------|
+- try to remember the library names
+- try to remember the popular functions within each library
+

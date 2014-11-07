@@ -1,0 +1,61 @@
+#+Title: CS120 Lab 1
+#+AUTHOR: Heyan Huang
+#+startup: beamer
+#+LaTeX_CLASS: beamer
+#+OPTIONS:   H:1 num:t toc:nil
+
+* Introduce Myself
+- Name: *Heyan Huang*
+- Major: Statistics & *Computer Science*
+- Experience: OPT Statistical industry experience, & 2 years cs course study, I use Emacs editor during lab sections;
+- Contact Email: *heyanh@vandals.uidaho.edu* \\ Prefer: *heyan.huang2010@gmail.com*
+- Technical Help: *211 CSAC*, mainly *MTWF* hours, try to find me there~~!!
+
+* Lab Rules
+** *Quiz*: 
+- At the beginning of the lab, you will have short answer *quizs*;
+- Count up to 15% for final score, as well as indicating attendence;
+** *No Late*: 
+- Labs are due at the *end of lab section*; 
+- Homeworks are due on *followed Monday*;
+** *Turn-in Requirements*: 
+- for *Lab* and for *Homeworks*;
+- *electronic versions* is required;
+- *hard copy* as an extra; 
+- *Electronic* copy can be checked in through "*cscheckin*" command. Specify *filename* and *course folder*, eg. "*cs120*"
+** *No Cheating*:
+- No *copying* codes or program Results from students;
+- No *copying* codes or program Results from website without understanding;
+- *hard copy* results must *match* your *Electronic* program's results;
+
+* Lab Rules
+- No talking to neighbors; Either raise your questions or answer mine;
+- I promote *independent & inspiring thinking*. You are free to ask questions with consideration for classmates. 
+- If you are doing lab sections well, I will be more than happy to teach you some other skills, like introducing *Emacs editor*, including some practical *interview questions* and coding practise in lab section. 
+- If you have difficulty with lab or homework, I am willing to help in CSAC, and I would feel happy to see you make progress.
+
+* Linux Commands
+*** *pwd*:  *p* rint *w* orking *d* irectory
+*** *ls*:  *l* i *s* t files and Directories
+*** *mkdir*:  *m* a *k* e *dir* ectory
+*** *cd*:  *c* hange your working *d* irectory 
+- The "*.*" symbol refers to the working directory;
+- The "*..*" symbol refers to the working directory's parent directory;
+- The "*./*" symbol means execute script from my current directory. Dot (*.*), or current directory is never on the *PATH* ( *echo $PATH* to check this ) for security reasons and it never should be. 
+*** *script*: make typescript of terminal session
+*** *exit*: The exit operation typically performs clean-up operations within the process space before returning control back to the operating system. (source: Wikipedia)
+
+* Programming Environment Introcution
+
+1) Use *putty* to log into *wormulon.cs.uidaho.edu*. Use your *Vandal Username* and *password* to log on.
+2) Use the *mkdir* command to create a directory called *labs*.
+3) Use the *cd* command to move into the new *labs* directory.
+4) Use emacs/nano to create a file called *fortune.cpp* and write the Fortune Teller program in the file. Add a block of comments to the beginning of the program that lists your name, section number, date, and the assignment number.
+5) Use *g++* to compile the Fortune Teller program. You may need to type *./a.out* to run the program.
+
+* Sample Program
+6) Modifications: Print a *welcome message* at the beginning of the program; Change the program so that the fortunes are *different*. *Make up your own fortunes*, try to keep them interesting.
+7) Script: Use the *script* (make typescript of terminal session) command to create a printable output file. The command *script lab1output* will create a file called *lab1output*.
+8) View Results: use the commands *pwd* and *ls* to show the current directory and its contents. Finally, use the *exit* command to end the script.
+9) Final: Now You have a file called *fortune.cpp* containing the Fortune Teller program and a file called *lab1output* containing a 'transcript' of you running the Fortune Teller program and the pwd and ls commands. Print both files (using the *lpr* command) and turn them in.
+

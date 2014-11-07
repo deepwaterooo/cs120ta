@@ -1,0 +1,52 @@
+\def\spacingset#1{\renewcommand{\baselinestretch}{#1}\small\normalsize}
+\documentclass[11pt]{article}
+\usepackage{palatino}
+\usepackage{epsfig}   
+\renewcommand{\ttdefault}{cmtt} % Sets the tt font back to the default
+\font\fnta=cmr10 at 10pt       % Defines fonts for second part of handout
+\font\fntb=cmti10 at 10pt      % Error message part uses "regular" fonts
+\setlength{\textheight}{9in}
+\setlength{\textwidth}{6.25in}
+\setlength{\hoffset}{0.6in}
+\hoffset= -0.675in
+\voffset= -0.5in
+\setlength {\parskip}{9 pt} 
+\setlength {\parindent}{0.0in}
+\rm
+\normalsize
+\pagestyle{empty}
+\begin{document}
+
+\begin{center}
+\large
+\bf
+{\sffamily CS120 - Computer Science I\\
+           Quiz for week 9 - Fall   2014}
+\end{center}
+\normalsize
+Name \rule{2.5in}{.015in}
+
+\normalsize
+
+{\bf 1. } (3  pts) Perform the following base conversions: 
+
+{\bf a.)}  0010 1110 binary to decimal 
+
+\vspace{1.0in}
+
+{\bf b.)} 38 decimal to binary
+
+\vspace{1.0in}
+{\bf c.)} A3 Hex to decimal
+
+\vspace{1.0in}
+
+{\bf 2.} (2 pts) Write the statements necessary to initialize the array
+declared below to ascending even numbers starting at 0. That is, a[0] should be 0, a[1] should
+be 2, a[2] should be 4, etc...
+
+\begin{verbatim}
+    int a[850];
+\end{verbatim}
+
+\end{document}

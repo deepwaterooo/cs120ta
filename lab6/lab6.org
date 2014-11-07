@@ -1,0 +1,86 @@
+#+title: CS120 Lab *6* Section *6*
+#+author: Heyan Huang
+#+startup: beamer
+#+latex_class: beamer
+#+options: H:1 num:t toc:nil
+
+* Quiz for Week 5 *Answers*
+
+Write the prototype/declaration and the code/definition for a function that takes a double as input and returns the square of the double as the function's output. The rest of the program, including main(), is given.
+  #+begin_src
+#include <iostream>
+#include <cmath>
+using namespace std;
+double my_function(double);
+int main(){
+    double x = 4.5;
+    double y;
+    y = my function(x);
+    cout << y << endl;
+}
+double my_function(double x) {
+    // return pow(x, 2);
+    return x * x;
+}
+  #+end_src
+
+* Quiz for Week 6 *Answers* 
+All of the following questions are based on the class position, which is defined as:
+  #+begin_src
+class position {
+private:
+    int x;
+    int y;
+public:
+    int distance();
+};
+  #+end_src
+- Write the code to declare a single object named *center* of type position:
+
+  *position center;*
+- Write code to have the object named center call the *distance()* function.
+
+  *center.distance();*
+
+* Quiz for Week 6 *Answers* (continued)
+All of the following questions are based on the class position, which is defined as:
+  #+begin_src
+class position {
+private:
+    int x;
+    int y;
+public:
+    int distance();
+};
+  #+end_src
+- What are the data members of the class?
+
+  *x and y.*
+- What are the member functions (methods) of the class?
+
+  *distance().*
+- If there was a constructor function for this class, what would the name of the function be?
+
+  *position()*
+
+* Scores of Quiz Week 5
+\\
+- *Quiz for Week 5* Distribution:
+|------------------------+---+---+---+---+---+---+--------|
+| Score                  | 0 | 1 | 2 | 3 | 4 | 5 | Missed |
+|------------------------+---+---+---+---+---+---+--------|
+| Section *4* Count (22) | 4 | 4 | 1 | 2 | 7 | 3 |      1 |
+|------------------------+---+---+---+---+---+---+--------|
+| Section *6* Count (24) | 1 | 1 | 2 | 4 | 6 | 2 |      8 |
+|------------------------+---+---+---+---+---+---+--------|
+
+* Lab 6 Specific Requirements
+- *cscheckin*:
+    - *Source Program* only
+    - program name: *Lab6Sec6.cpp*
+\\
+- *Hard Copy*:
+    - *Source Program*: Lab6Sec6.cpp
+    - *Script Output* of the program: 
+      - make sure *./a.out* execute the modified parts of your program.
+      

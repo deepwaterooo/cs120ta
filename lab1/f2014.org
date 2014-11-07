@@ -1,0 +1,43 @@
+#+latex_class: cn-article
+#+latex_header: \usepackage{CJKutf8}
+#+latex_header: \begin{CJK}{UTF8}{gbsn}
+#+latex_header: \lstset{language=c++,numbers=left,numberstyle=\tiny,basicstyle=\ttfamily\small,tabsize=4,frame=none,escapeinside=``,extendedchars=false,keywordstyle=\color{blue!70},commentstyle=\color{red!55!green!55!blue!55!},rulesepcolor=\color{red!20!green!20!blue!20!}}
+#+title: Fall 2014 Schedule
+#+author: Heyan Huang
+
+|----------------+---------------+---------------+-------------+---------------+---------------|
+| Time           | Monday        | Tuesday       | Wednesday   | Thursday      | Friday        |
+| CSAC Hours     | 1.5 +1+1 =3.5 | 0 +1.5+1 =2.5 | 1.5 +1.5 =3 | 1             | 1.5 +2.5+2 =6 |
+|----------------+---------------+---------------+-------------+---------------+---------------|
+|                | CSAC Matt     |               | CSAC Alex   | CSAC John     | CSAC          |
+| 08:00-09:30 am | CSAC Matt     |               | CSAC Alex   | CSAC John     | CSAC Brandon  |
+|                | CSAC Matt     |               | CSAC Alex   |               | CSAC Brandon  |
+|----------------+---------------+---------------+-------------+---------------+---------------|
+| 09:30-10:30 am | CS449         |               | CS449       |               | CS449         |
+|                | JEB025        |               | JEB025      |               | JEB025        |
+|----------------+---------------+---------------+-------------+---------------+---------------|
+| 10:30-11:00 am | CSAC Xin      |               |             |               | CSAC Brandon  |
+| 11:00-11:30 pm | CSAC Xin      | CSAC Matt     |             |               | CSAC Brandon  |
+|----------------+---------------+---------------+-------------+---------------+---------------|
+| 11:30-12:00 pm |               | CSAC Matt     |             |               | CSAC John     |
+| 12:00-12:30 pm |               | CSAC Matt     |             |               | CSAC John     |
+|----------------+---------------+---------------+-------------+---------------+---------------|
+|                |               |               |             |               | CSAC Anup     |
+| 12:30-1:30 pm  |               | CS120 JEB 321 |             | CS120 JEB 321 |               |
+|----------------+---------------+---------------+-------------+---------------+---------------|
+| 01:30-2:30 pm  | CSAC Anup     | CS120 JEB 321 | CS480       | CS120 JEB 321 |               |
+|                | CSAC Anup     |               | OH          |               |               |
+|----------------+---------------+---------------+-------------+---------------+---------------|
+| 02:30-3:30 pm  | CS499         | CSAC John     |             | CS499         |               |
+|                | OH            | CSAC John     |             | OH            | CSAC Anup     |
+|----------------+---------------+---------------+-------------+---------------+---------------|
+|                |               |               | CSAC Matt   |               | CSAC Anup     |
+| 03:30-5:00 pm  |               | CS480 AS106   | CSAC Matt   | CS480 AS106   | CSAC Emeth    |
+|                |               |               | CSAC Matt   |               | CSAC Emeth    |
+|----------------+---------------+---------------+-------------+---------------+---------------|
+|                |               |               |             |               |               |
+| 07:00-9:45 pm  |               |               | CS511       |               |               |
+|                |               |               |             |               |               |
+|                |               |               |             |               |               |
+|----------------+---------------+---------------+-------------+---------------+---------------|
+我是中国人

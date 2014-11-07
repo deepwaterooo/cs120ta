@@ -1,0 +1,14 @@
+for chinese input: 
+
+// modify xeCJK.sty one line code
+http://bbs.ctex.org/forum.php?mod=viewthread&tid=66515
+\RequirePackage{xkeyval}
+
+http://bbs.ctex.org/forum.php?mod=viewthread&tid=54820
+
+http://forum.ubuntu.org.cn/viewtopic.php?f=35&t=168940
+
+http://ustcscgy.github.io/wiki/tex.html
+
+
+

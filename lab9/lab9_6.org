@@ -1,0 +1,49 @@
+#+title: CS120 Lab *9* Section *6*
+#+author: Heyan Huang
+#+startup: beamer
+#+latex_class: beamer
+#+options: H:1 num:t toc:nil
+
+- *Quiz for Week 8* Distribution:
+|------------------------+---+---+---+---+---+---+--------|
+| Score                  | 0 | 1 | 2 | 3 | 4 | 5 | Missed |
+|------------------------+---+---+---+---+---+---+--------|
+| Section *4* Count (22) | 0 | 2 | 4 | 5 | 4 | 3 |      4 |
+|------------------------+---+---+---+---+---+---+--------|
+| Section *6* Count (24) | 0 | 3 | 5 | 4 | 5 | 0 |      7 |
+|------------------------+---+---+---+---+---+---+--------|
+\\
+- *Lab 7*:
+|------------------------+----+-------+-------+----+------+----+--------|
+| Score                  | <9 | 10/.5 | 11/.5 | 12 | 12.5 | 13 | Missed |
+|------------------------+----+-------+-------+----+------+----+--------|
+| Section *4* Count (22) |  1 |     5 |     1 |    |    6 |  3 |      6 |
+|------------------------+----+-------+-------+----+------+----+--------|
+| Section *6* Count (24) |  3 |     1 |     2 |  1 |    1 |  7 |     9  |
+|------------------------+----+-------+-------+----+------+----+--------|
+\\
+- *Lab 8*:
+  - Will hand it back to you during coming lab
+
+* Emacs configure *Line Number*
+- command option
+  - works for current buffer
+  - commands: *M-x linum-mode RET*
+- permanent configuration in home directory
+  - go to home directory: *pwd* ----> */home/huan3416*
+  - *man ls*, check *-a*, *-l*, *-t* options; type *q* to quit from *man* results
+  - *ls -a*: check if there is an emacs configuration file named *.emacs*
+  - If not, create *.emacs* file by typing *emacs .emacs* in terminal
+  - type *(global-linum-mode 1)* in the file
+  - *C-x C-s* to *save* the file
+  - *C-x C-c* to *exit* from emacs
+- later on when you have questions, please try to use *emacs*, or if you prefer to use *vim*
+
+* Lab 9 Specific Requirements
+- *cscheckin*:
+    - *Source Programs* only: *Lab9Sec6.cpp*
+\\
+- *Hard Copy*:
+    - *Source Program*: 
+      - Lab9Sec6.cpp
+    - *Script Output* of the program

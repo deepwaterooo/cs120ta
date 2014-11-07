@@ -1,0 +1,268 @@
+% Created 2014-10-02 Thu 17:12
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage[CJKbookmarks=true]{hyperref}
+%% Define a museincludegraphics command, which is
+%%   able to handle escaped special characters in image filenames.
+\def\museincludegraphics{%
+  \begingroup
+  \catcode`\|=0
+  \catcode`\\=12
+  \catcode`\#=12
+  \includegraphics[width=0.75\textwidth]
+}
+\usetheme{default}
+\author{Heyan Huang}
+\date{\today}
+\title{CS120 Lab \alert{5} Section \alert{6}}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.3.1 (Org mode 8.2.7c)}}
+\begin{document}
+
+\maketitle
+
+\begin{frame}[fragile,label=sec-1]{Quiz for Week 4 \& 5 \alert{Answers}}
+ \begin{itemize}
+\item In C++ a library is a file containing code that can be used in other programs.
+\end{itemize}
+\\
+\begin{itemize}
+\item A conditional is used in a program to control whether or not a piece of code is executed.
+\end{itemize}
+\\
+\begin{itemize}
+\item The following code snippet will print It¡¯s true.
+\begin{verbatim}
+int x = 15;
+if(x + 20 > 2 * x){
+    cout << "It¡¯s true";
+}
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-2]{Quiz for Week 4 \& 5 \alert{Answers}: Type Conversion}
+ \begin{itemize}
+\item The expression 1 || 1, which represents true || true will evaluate to true.
+\end{itemize}
+\\
+\begin{itemize}
+\item The following code snippet will print the value 2.
+\begin{verbatim}
+int x = 25;
+double y = 10;
+cout << x/y;
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-3]{Quiz for Week 4 \& 5 \alert{Answers}: Loop}
+ \begin{itemize}
+\item The following code snippet will print the word here exactly ten times.
+\begin{verbatim}
+int x = 0;
+while (x < 10) {
+    cout << "here";
+}
+\end{verbatim}
+\end{itemize}
+\\
+
+\begin{itemize}
+\item A while loop can always be rewritten as a do-while loop and vice versa.
+\begin{itemize}
+\item \alert{demonstrate} using codes
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-4]{Quiz for Week 4 \& 5 \alert{Answers}: Loop}
+ \begin{itemize}
+\item The following code snippet will print the word here exactly ten times.
+\begin{verbatim}
+int x = 0;
+do {
+    cout << "here";
+} while (x < 10)
+\end{verbatim}
+\end{itemize}
+\\
+
+\begin{itemize}
+\item After the following code snippet of code is done running x will have the value 9.
+\begin{verbatim}
+int x = 0;
+while(x<10){
+    cout << "here";
+    x = x + 1;
+}
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-5]{Quiz for Week 4 \& 5 \alert{Answers}: Loop}
+ \begin{itemize}
+\item The following snippet of code will get stuck in an infinite loop.
+\begin{verbatim}
+int x = 1;
+while(x != 10){
+    cout << "here";
+    x = x + 2;
+}
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-6]{Scores of Quiz3 \& Lab3 \& Lab4}
+\\
+\begin{itemize}
+\item \alert{Lab 3} Distribution: 
+\begin{itemize}
+\item Section \alert{4}: 2 * \alert{9.5} / 21; 19 * \alert{10} / 21;
+\item Section \alert{6}: 2 * \alert{9.5} / 19; 17 * \alert{10} / 19;
+\end{itemize}
+\end{itemize}
+\\
+\begin{itemize}
+\item \alert{Quiz for Week 4} Distribution:
+\end{itemize}
+\begin{center}
+\begin{tabular}{lrrrrrrr}
+\hline
+Score & 0 & 1 & 2 & 3 & 4 & 5 & Missed\\
+\hline
+Section \alert{4} Count (22) & 1 & 1 & 4 & 4 & 8 & 3 & 1\\
+\hline
+Section \alert{6} Count (24) & 0 & 1 & 2 & 7 & 5 & 5 & 4\\
+\hline
+\end{tabular}
+\end{center}
+\\
+\begin{itemize}
+\item \alert{Lab4} Distribution:
+\end{itemize}
+\begin{center}
+\begin{tabular}{lrrrrrrrrrr}
+\hline
+Score & 6 & 6.5 & 7 & 7.5 & 8 & 10.5 & 11.5 & 12 & 12.5 & Missed\\
+\hline
+Section \alert{4} (22) & 1 & 1 &  & 2 &  & 0 & 9 & 4 & 1 & 4\\
+\hline
+Section \alert{6} (24) & 1 &  &  &  & 1 & 1 & 10 & 4 & 1 & 6\\
+\hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}[label=sec-7]{Editor Command Set and Formatting}
+\begin{itemize}
+\item Nano: 
+\begin{itemize}
+\item search for \alert{nano cheat sheet}
+\end{itemize}
+\end{itemize}
+\\
+\begin{itemize}
+\item Emacs: 
+\begin{itemize}
+\item enter emacs: \alert{emacs lab5.cpp}
+\item \alert{indent} source program:
+\begin{itemize}
+\item \alert{C-x h} to select the whole buffer
+\item hit \alert{Tab} key to autoindent the selected block of code
+\item \alert{C-x C-c} to exit from emacs, and type "\alert{yes}" to \alert{save buffer}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\\
+\begin{itemize}
+\item Comment: 
+\begin{itemize}
+\item Block Comment is very important;
+\item especially for this \alert{lab5}
+\item \alert{Block comment} the parts who worked on which block/function
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-8]{\textless{}cmath\textgreater{} Library}
+\begin{itemize}
+\item \textless{}cmath\textgreater{} library Functions
+\begin{itemize}
+\item pow(base, exponent): Returns base raised to the power exponent;   
+\begin{itemize}
+\item prototype: \alert{double pow (double base, double exponent);}
+\end{itemize}
+\item sqrt(x): Returns the square root of x;
+\begin{itemize}
+\item prototype: \alert{double sqrt (double x);}
+\end{itemize}
+\end{itemize}
+\end{itemize}
+\begin{center}
+\begin{tabular}{llll}
+\hline
+Powre & Exponetnial & Trigonometric & Rounding\\
+Functions & Functions & Functions & Remainder\\
+\hline
+pow & exp & cos & ceil\\
+sqrt & log & sin & floor\\
+ &  & tan & trunc\\
+\hline
+\end{tabular}
+\end{center}
+\begin{itemize}
+\item try to remember the \alert{Library names}
+\end{itemize}
+\\
+\begin{itemize}
+\item try to remember the most frequently used \alert{functions prototypes} within each library
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-9]{Lab 5 Specific Requirements}
+\begin{itemize}
+\item \alert{cscheckin}:
+\begin{itemize}
+\item \alert{Source Program} only
+\end{itemize}
+\end{itemize}
+\\
+\begin{itemize}
+\item \alert{Hard Copy}:
+\begin{itemize}
+\item \alert{Source Program}
+\item script \alert{Output} of the program
+\end{itemize}
+\end{itemize}
+\\
+\begin{itemize}
+\item \alert{Exam Attention}:
+\begin{itemize}
+\item \alert{Exam} tomorrow \alert{Friday}, \alert{2014/10/3}
+\end{itemize}
+\end{itemize}
+\end{frame}
+% Emacs 24.3.1 (Org mode 8.2.7c)
+\end{document}

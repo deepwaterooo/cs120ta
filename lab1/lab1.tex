@@ -1,0 +1,133 @@
+% Created 2014-09-22 Mon 20:44
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage[CJKbookmarks=true]{hyperref}
+%% Define a museincludegraphics command, which is
+%%   able to handle escaped special characters in image filenames.
+\def\museincludegraphics{%
+  \begingroup
+  \catcode`\|=0
+  \catcode`\\=12
+  \catcode`\#=12
+  \includegraphics[width=0.75\textwidth]
+}
+\usetheme{default}
+\author{Heyan Huang}
+\date{\today}
+\title{CS120 Lab 1}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.3.1 (Org mode 8.2.7c)}}
+\begin{document}
+
+\maketitle
+
+\begin{frame}[label=sec-1]{Introduce Myself}
+\begin{itemize}
+\item Name: \alert{Heyan Huang}
+\item Major: Statistics \& \alert{Computer Science}
+\item Experience: OPT Statistical industry experience, \& 2 years cs course study, I use Emacs editor during lab sections;
+\item Contact Email: \alert{heyanh@vandals.uidaho.edu} \\ Prefer: \alert{heyan.huang2010@gmail.com}
+\item Technical Help: \alert{211 CSAC}, mainly \alert{MTWF} hours, try to find me there\textasciitilde{}~!!
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-2]{Lab Rules}
+\begin{block}{\alert{Quiz}:}
+\begin{itemize}
+\item At the beginning of the lab, you will have short answer \alert{quizs};
+\item Count up to 15\% for final score, as well as indicating attendence;
+\end{itemize}
+\end{block}
+\begin{block}{\alert{No Late}:}
+\begin{itemize}
+\item Labs are due at the \alert{end of lab section};
+\item Homeworks are due on \alert{followed Monday};
+\end{itemize}
+\end{block}
+\begin{block}{\alert{Turn-in Requirements}:}
+\begin{itemize}
+\item for \alert{Lab} and for \alert{Homeworks};
+\item \alert{electronic versions} is required;
+\item \alert{hard copy} as an extra;
+\item \alert{Electronic} copy can be checked in through "\alert{cscheckin}" command. Specify \alert{filename} and \alert{course folder}, eg. "\alert{cs120}"
+\end{itemize}
+\end{block}
+\begin{block}{\alert{No Cheating}:}
+\begin{itemize}
+\item No \alert{copying} codes or program Results from students;
+\item No \alert{copying} codes or program Results from website without understanding;
+\item \alert{hard copy} results must \alert{match} your \alert{Electronic} program's results;
+\end{itemize}
+\end{block}
+\end{frame}
+
+\begin{frame}[label=sec-3]{Lab Rules}
+\begin{itemize}
+\item No talking to neighbors; Either raise your questions or answer mine;
+\item I promote \alert{independent \& inspiring thinking}. You are free to ask questions with consideration for classmates.
+\item If you are doing lab sections well, I will be more than happy to teach you some other skills, like introducing \alert{Emacs editor}, including some practical \alert{interview questions} and coding practise in lab section.
+\item If you have difficulty with lab or homework, I am willing to help in CSAC, and I would feel happy to see you make progress.
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-4]{Linux Commands}
+\begin{block}{\alert{pwd}:  \alert{p} rint \alert{w} orking \alert{d} irectory}
+\end{block}
+\begin{block}{\alert{ls}:  \alert{l} i \alert{s} t files and Directories}
+\end{block}
+\begin{block}{\alert{mkdir}:  \alert{m} a \alert{k} e \alert{dir} ectory}
+\end{block}
+\begin{block}{\alert{cd}:  \alert{c} hange your working \alert{d} irectory}
+\begin{itemize}
+\item The "\alert{.}" symbol refers to the working directory;
+\item The "\alert{..}" symbol refers to the working directory's parent directory;
+\item The "\alert{./}" symbol means execute script from my current directory. Dot (\alert{.}), or current directory is never on the \alert{PATH} ( \alert{echo \$PATH} to check this ) for security reasons and it never should be.
+\end{itemize}
+\end{block}
+\begin{block}{\alert{script}: make typescript of terminal session}
+\end{block}
+\begin{block}{\alert{exit}: The exit operation typically performs clean-up operations within the process space before returning control back to the operating system. (source: Wikipedia)}
+\end{block}
+\end{frame}
+
+\begin{frame}[label=sec-5]{Programming Environment Introcution}
+\begin{enumerate}
+\item Use \alert{putty} to log into \alert{wormulon.cs.uidaho.edu}. Use your \alert{Vandal Username} and \alert{password} to log on.
+\item Use the \alert{mkdir} command to create a directory called \alert{labs}.
+\item Use the \alert{cd} command to move into the new \alert{labs} directory.
+\item Use emacs/nano to create a file called \alert{fortune.cpp} and write the Fortune Teller program in the file. Add a block of comments to the beginning of the program that lists your name, section number, date, and the assignment number.
+\item Use \alert{g++} to compile the Fortune Teller program. You may need to type \alert{./a.out} to run the program.
+\end{enumerate}
+\end{frame}
+
+\begin{frame}[label=sec-6]{Sample Program}
+\begin{enumerate}
+\item Modifications: Print a \alert{welcome message} at the beginning of the program; Change the program so that the fortunes are \alert{different}. \alert{Make up your own fortunes}, try to keep them interesting.
+\item Script: Use the \alert{script} (make typescript of terminal session) command to create a printable output file. The command \alert{script lab1output} will create a file called \alert{lab1output}.
+\item View Results: use the commands \alert{pwd} and \alert{ls} to show the current directory and its contents. Finally, use the \alert{exit} command to end the script.
+\item Final: Now You have a file called \alert{fortune.cpp} containing the Fortune Teller program and a file called \alert{lab1output} containing a 'transcript' of you running the Fortune Teller program and the pwd and ls commands. Print both files (using the \alert{lpr} command) and turn them in.
+\end{enumerate}
+\end{frame}
+% Emacs 24.3.1 (Org mode 8.2.7c)
+\end{document}

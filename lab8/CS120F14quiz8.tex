@@ -1,0 +1,65 @@
+\def\spacingset#1{\renewcommand{\baselinestretch}{#1}\small\normalsize}
+\documentclass[12pt,openbib]{article}
+\usepackage{palatino}
+\usepackage{epsfig}
+\setlength{\textheight}{9.3in} 
+\setlength{\textwidth}{6.50in} 
+\setlength{\hoffset}{0.60in}
+\hoffset= -.6875in 
+%\voffset= -1.0in 
+\setlength {\parskip}{9 pt} 
+\setlength {\parindent}{0.0in}
+\rm
+\normalsize
+\begin{document}
+\thispagestyle{empty}
+\vspace{-1.0in}
+\Large
+\begin{center}
+\textsf{CS120  Lab Quiz for Week 8}\\
+\large
+%\textsf{Spring 2005}
+\textsf{Fall 2014}
+\end{center}
+\vspace{-0.2in}
+\large\textsf{Name: }\rule[-0.01in]{2.5in}{0.015in}
+\hspace{0.5in} Section \rule[-0.01in]{1.0in}{0.015in}
+
+\normalsize
+\rm
+%Time: 50  Minutes. Closed Book, There are 4 pages and 8 questions to this test. 
+
+{\bf 1.} (5 pt)  Answer the following questions based on the following class declaration:\\ \\
+{\tt 
+class circle\{ \\
+\hspace*{0.2in}public:\\
+\hspace*{0.5in}void print();\\
+\hspace*{0.2in}private:\\
+\hspace*{0.5in}int x; \\
+\hspace*{0.5in}int y; \\
+\hspace*{0.5in}float radius; \\
+\};
+}
+
+\begin{enumerate}
+\item Write the code for a default constructor of the class {\tt circle} that sets the location (x,y) to 0,0 and the {\tt radius} to 1.
+\vspace{3cm}
+\item Write the code for the {\tt print()} function so that circles are printed as:\\
+{\tt A circle at x,y has radius r}\\
+Where {\tt x}, {\tt y}, and {\tt r} are the values for the circle object.
+\vspace{3cm}
+\item Write the statement(s) to create an array of 100 circles.
+\vspace{1cm}
+\item Write the statement(s) to print the 3rd object in the array of question 3.
+\vspace{1cm}
+\item Write the statement(s) to print the last object in the array of question 3.
+
+%\item  The \rule{4cm}{0.4pt} symbol(s) is used for the less than operator.
+%\item The \rule{4cm}{0.4pt} symbol(s) are used for the equals operator - i.e. to test if two values are equal.
+%\item The \rule{4cm}{0.4pt} symbol(s) are used for the Boolean AND operator.
+%\item In C++ the expression 1 $>$ 2 evaluates to \rule{4cm}{0.4pt}.
+%\item In C++ the expression (1 $>$ 2) $\|$ (100 $>$ 20) evaluates to \rule{4cm}{0.4pt}.
+
+\end{enumerate}
+\end{document}
+

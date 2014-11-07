@@ -1,0 +1,266 @@
+% Created 2014-10-28 Tue 12:21
+\documentclass[presentation]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{fixltx2e}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{float}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{textcomp}
+\usepackage{marvosym}
+\usepackage{wasysym}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\tolerance=1000
+\usepackage{CJK}
+\usepackage{indentfirst}
+\usepackage[pdftex]{graphicx}
+\usepackage{fancyhdr}
+\usepackage[CJKbookmarks=true]{hyperref}
+%% Define a museincludegraphics command, which is
+%%   able to handle escaped special characters in image filenames.
+\def\museincludegraphics{%
+  \begingroup
+  \catcode`\|=0
+  \catcode`\\=12
+  \catcode`\#=12
+  \includegraphics[width=0.75\textwidth]
+}
+\usetheme{default}
+\author{Heyan Huang}
+\date{\today}
+\title{CS120 Lab \alert{9} Section \alert{4}}
+\hypersetup{
+  pdfkeywords={},
+  pdfsubject={},
+  pdfcreator={Emacs 24.3.1 (Org mode 8.2.7c)}}
+\begin{document}
+
+\maketitle
+
+\begin{frame}[fragile,label=sec-1]{Quiz for Week 8 \alert{Answers}}
+ (5 pt) Answer the following questions based on the following class declaration:
+\begin{verbatim}
+class circle {
+  public:
+    void print();
+  private:
+    int x;
+    int y;
+    float radius;
+};
+\end{verbatim}
+
+\begin{itemize}
+\item Write the code for a default constructor of the class circle that sets the location (x,y) to 0,0 and the radius to 1.
+\begin{verbatim}
+circle::circle() {
+    x = 0;
+    y = 0;
+    radius = 1.0;
+}
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-2]{Quiz for Week 8 \alert{Answers} (continued)}
+ \begin{verbatim}
+class circle {
+  public:
+    void print();
+  private:
+    int x;
+    int y;
+    float radius;
+};
+\end{verbatim}
+\begin{itemize}
+\item Write the code for the print() function so that circles are printed as: 
+
+\alert{A circle at x,y has radius r} 
+
+Where x, y, and r are the values for the circle object.
+
+\begin{verbatim}
+void circle::print() {
+    cout << "A circle at " << x << ", " << y
+         << " has radius " << radius << endl;
+}
+\end{verbatim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[fragile,label=sec-3]{Quiz for Week 8 \alert{Answers} (continued)}
+ \begin{verbatim}
+class circle {
+  public:
+    void print();
+  private:
+    int x;
+    int y;
+    float radius;
+};
+\end{verbatim}
+\begin{itemize}
+\item Write the statement(s) to create an array of 100 circles.
+
+\alert{circle whatEverArrayNameHere[ 100 ];}
+\item Write the statement(s) to print the 3rd object in the array of question 3.
+
+\alert{whatEverArrayNameHere[ 2 ].print();}
+\item Write the statement(s) to print the last object in the array of question 3.
+
+\alert{whatEverArrayNameHere[ 99 ].print();}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-4]{Scores of Quiz Week 8}
+\\
+\begin{itemize}
+\item \alert{Quiz for Week 8} Distribution:
+\end{itemize}
+\begin{center}
+\begin{tabular}{lrrrrrrr}
+\hline
+Score & 0 & 1 & 2 & 3 & 4 & 5 & Missed\\
+\hline
+Section \alert{4} Count (22) & 0 & 2 & 4 & 5 & 4 & 3 & 4\\
+\hline
+Section \alert{6} Count (24) & 0 & 3 & 5 & 4 & 5 & 0 & 7\\
+\hline
+\end{tabular}
+\end{center}
+\\
+\begin{itemize}
+\item \alert{Lab 7}:
+\end{itemize}
+\begin{center}
+\begin{tabular}{lrrrrrrr}
+\hline
+Score & <9 & 10/.5 & 11/.5 & 12 & 12.5 & 13 & Missed\\
+\hline
+Section \alert{4} Count (22) & 1 & 5 & 1 &  & 6 & 3 & 6\\
+\hline
+Section \alert{6} Count (24) & 2 & 1 & 2 & 1 & 1 & 6 & 11\\
+\hline
+\end{tabular}
+\end{center}
+\\
+\begin{itemize}
+\item \alert{Lab 8}:
+\begin{itemize}
+\item Just got the grading criteria yesterday afternoon after after 4:00pm
+\item Will hand it back to you during coming lab
+\end{itemize}
+\end{itemize}
+\end{frame}
+\begin{frame}[label=sec-5]{Emacs}
+\begin{itemize}
+\item The reason why I like Emacs:
+\begin{itemize}
+\item Emacs is an \alert{operating system};
+\item Just like iphone/ipad changed human being's life, emacs \alert{makes programmer's life so much easier\textasciitilde{}!}
+\item Most popular packages: 
+\begin{itemize}
+\item \alert{autocomplete}
+\item \alert{yasnippet}
+\item \alert{org-mode}
+\item autopair
+\item AUCTex
+\end{itemize}
+\end{itemize}
+\item Personal Experience:
+\begin{itemize}
+\item when I took CS120 we don't have labs at all, and I have never been exposed to \alert{emacs} or \alert{vim} command based editors;
+\item From my experience, I hope you guys can be exposed to these command-based editors \alert{as soon as possible}.
+\end{itemize}
+\item Contents that will be covered in this lab:
+\begin{itemize}
+\item \alert{basic commands} that emacs programmers use every day;
+\item one line \alert{configuration} for line number
+\end{itemize}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-6]{Emacs Basic Commands}
+\begin{itemize}
+\item google "\alert{Emacs cheat sheet}"
+\item Motion
+\end{itemize}
+\begin{center}
+\begin{tabular}{lll}
+\hline
+entity to move over & backward & forward\\
+\hline
+character & C-b & C-f\\
+word & M-b & M-f\\
+line & C-p & C-n\\
+go to line beginning/end & C-a & C-e\\
+\hline
+\end{tabular}
+\end{center}
+\begin{itemize}
+\item other commands
+\end{itemize}
+\begin{center}
+\begin{tabular}{ll}
+\hline
+search forward & C-s\\
+search backward & C-r\\
+scroll to next screen & C-v\\
+scroll to previous screen & M-v\\
+goto line & M-g g\\
+set mark here & C-SPC or C-@\\
+copy region to kill ring & M-w\\
+yank back last thing killed & C-y\\
+\hline
+\end{tabular}
+\end{center}
+\end{frame}
+
+\begin{frame}[label=sec-7]{Emacs configure \alert{Line Number}}
+\begin{itemize}
+\item command option
+\begin{itemize}
+\item works for current buffer
+\item commands: \alert{M-x linum-mode RET}
+\end{itemize}
+\item permanent configuration in home directory
+\begin{itemize}
+\item go to home directory: \alert{pwd} ----> \alert{/home/huan3416}
+\item \alert{man ls}, check \alert{-a}, \alert{-l}, \alert{-t} options; type \alert{q} to quit from \alert{man} results
+\item \alert{ls -a}: check if there is an emacs configuration file named \alert{.emacs}
+\item If not, create \alert{.emacs} file by typing \alert{emacs .emacs} in terminal
+\item type \alert{(global-linum-mode 1)} in the file
+\item \alert{C-x C-s} to \alert{save} the file
+\item \alert{C-x C-c} to \alert{exit} from emacs
+\end{itemize}
+\item later on when you have questions, please try to use \alert{emacs}, or if you prefer to use \alert{vim}
+\end{itemize}
+\end{frame}
+
+\begin{frame}[label=sec-8]{Lab 9 Specific Requirements}
+\begin{itemize}
+\item \alert{cscheckin}:
+\begin{itemize}
+\item \alert{Source Programs} only: \alert{Lab9Sec4.cpp}
+\end{itemize}
+\end{itemize}
+\\
+\begin{itemize}
+\item \alert{Hard Copy}:
+\begin{itemize}
+\item \alert{Source Program}: 
+\begin{itemize}
+\item Lab9Sec4.cpp
+\end{itemize}
+\item \alert{Script Output} of the program
+\end{itemize}
+\end{itemize}
+\end{frame}
+% Emacs 24.3.1 (Org mode 8.2.7c)
+\end{document}

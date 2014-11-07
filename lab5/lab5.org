@@ -1,0 +1,140 @@
+#+title: CS120 Lab *5* Section *6*
+#+author: Heyan Huang
+#+startup: beamer
+#+latex_class: beamer
+#+options: H:1 num:t toc:nil
+
+* Quiz for Week 4 & 5 *Answers*
+- In C++ a library is a file containing code that can be used in other programs.
+\\
+- A conditional is used in a program to control whether or not a piece of code is executed.
+\\
+- The following code snippet will print It¡¯s true.
+  #+begin_src
+int x = 15;
+if(x + 20 > 2 * x){
+    cout << "It¡¯s true";
+}
+  #+end_src
+
+* Quiz for Week 4 & 5 *Answers*: Type Conversion
+- The expression 1 || 1, which represents true || true will evaluate to true.
+\\
+- The following code snippet will print the value 2.
+  #+begin_src
+int x = 25;
+double y = 10;
+cout << x/y;
+  #+end_src
+
+* Quiz for Week 4 & 5 *Answers*: Loop
+- The following code snippet will print the word here exactly ten times.
+  #+begin_src
+int x = 0;
+while (x < 10) {
+    cout << "here";
+}
+  #+end_src
+\\
+
+- A while loop can always be rewritten as a do-while loop and vice versa.
+  - *demonstrate* using codes
+
+* Quiz for Week 4 & 5 *Answers*: Loop
+- The following code snippet will print the word here exactly ten times.
+  #+begin_src
+int x = 0;
+do {
+    cout << "here";
+} while (x < 10)
+  #+end_src
+\\
+
+- After the following code snippet of code is done running x will have the value 9.
+  #+begin_src
+int x = 0;
+while(x<10){
+    cout << "here";
+    x = x + 1;
+}
+  #+end_src
+
+* Quiz for Week 4 & 5 *Answers*: Loop
+- The following snippet of code will get stuck in an infinite loop.
+  #+begin_src
+int x = 1;
+while(x != 10){
+    cout << "here";
+    x = x + 2;
+}
+  #+end_src
+
+* Scores of Quiz3 & Lab3 & Lab4
+\\
+- *Lab 3* Distribution: 
+  - Section *4*: 2 * *9.5* / 21; 19 * *10* / 21;
+  - Section *6*: 2 * *9.5* / 19; 17 * *10* / 19;
+\\
+- *Quiz for Week 4* Distribution:
+|------------------------+---+---+---+---+---+---+--------|
+| Score                  | 0 | 1 | 2 | 3 | 4 | 5 | Missed |
+|------------------------+---+---+---+---+---+---+--------|
+| Section *4* Count (22) | 1 | 1 | 4 | 4 | 8 | 3 |      1 |
+|------------------------+---+---+---+---+---+---+--------|
+| Section *6* Count (24) | 0 | 1 | 2 | 7 | 5 | 5 |      4 |
+|------------------------+---+---+---+---+---+---+--------|
+\\
+- *Lab4* Distribution:
+|------------------+---+-----+---+-----+---+------+------+----+------+--------|
+| Score            | 6 | 6.5 | 7 | 7.5 | 8 | 10.5 | 11.5 | 12 | 12.5 | Missed |
+|------------------+---+-----+---+-----+---+------+------+----+------+--------|
+| Section *4* (22) | 1 |   1 |   |   2 |   |    0 |    9 |  4 |    1 |      4 |
+|------------------+---+-----+---+-----+---+------+------+----+------+--------|
+| Section *6* (24) | 1 |     |   |     | 1 |    1 |   10 |  4 |    1 |      6 |
+|------------------+---+-----+---+-----+---+------+------+----+------+--------|
+
+* Editor Command Set and Formatting
+- Nano: 
+  - search for *nano cheat sheet*
+\\
+- Emacs: 
+  - enter emacs: *emacs lab5.cpp*
+  - *indent* source program:
+    - *C-x h* to select the whole buffer
+    - hit *Tab* key to autoindent the selected block of code
+    - *C-x C-c* to exit from emacs, and type "*yes*" to *save buffer*
+\\
+- Comment: 
+  - Block Comment is very important;
+  - especially for this *lab5*
+  - *Block comment* the parts who worked on which block/function
+
+* \textless{}cmath\textgreater{} Library
+- \textless{}cmath\textgreater{} library Functions
+    - pow(base, exponent): Returns base raised to the power exponent;   
+      - prototype: *double pow (double base, double exponent);*        
+    - sqrt(x): Returns the square root of x;
+      - prototype: *double sqrt (double x);*       
+|-----------+-------------+---------------+-----------|
+| Powre     | Exponetnial | Trigonometric | Rounding  |
+| Functions | Functions   | Functions     | Remainder |
+|-----------+-------------+---------------+-----------|
+| pow       | exp         | cos           | ceil      |
+| sqrt      | log         | sin           | floor     |
+|           |             | tan           | trunc     |
+|-----------+-------------+---------------+-----------|
+- try to remember the *Library names*
+\\
+- try to remember the most frequently used *functions prototypes* within each library
+
+* Lab 5 Specific Requirements
+- *cscheckin*:
+    - *Source Program* only
+\\
+- *Hard Copy*:
+    - *Source Program*
+    - script *Output* of the program
+\\
+- *Exam Attention*:
+  - *Exam* tomorrow *Friday*, *2014/10/3*
+      
