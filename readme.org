@@ -3,4 +3,4 @@
 #+title: CS120 TA for Section 4 & Section 6
 #+author: Jenny Huang
 
-This repository does not necessarily prove any intellignece, rather than indicating my attitudes towards my work. 
+This repository does not necessarily prove any intellignece, rather than indicate my attitudes towards my work. 
