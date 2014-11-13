@@ -3,4 +3,4 @@
 #+title: CS120 TA for Section 4 & Section 6
 #+author: Jenny Huang
 
-Just to show that I have worked and spent time on them. It does not necessarily prove any intellignece, but does indicate my attitude towards my work. 
+This repository does not necessarily prove any intellignece, rather than indicating my attitudes towards my work. 
