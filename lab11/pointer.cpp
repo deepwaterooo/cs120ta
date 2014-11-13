@@ -1,3 +1,7 @@
+// address dereference
+// to help understand pointers slightly better
+// draw on board layout
+
 #include <iostream>
 using namespace std;
 
