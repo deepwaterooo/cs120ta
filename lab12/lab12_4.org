@@ -1,0 +1,10 @@
+#+title: CS120 Lab *12* Section *4*
+#+author: Heyan Huang
+#+startup: beamer
+#+latex_class: beamer
+#+options: H:1 num:t toc:nil
+
+* Lab 12 Specific Requirements
+- cscheckin: 
+    - *Source Programs* only: *Lab12Sec4.tar*
+    - *tar -cvf Lab12Sec4.tar youMainName.cpp robot.h world.h*

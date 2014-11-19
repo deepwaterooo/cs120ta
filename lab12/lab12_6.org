@@ -1,0 +1,21 @@
+#+title: CS120 Lab *11* Section *6*
+#+author: Heyan Huang
+#+startup: beamer
+#+latex_class: beamer
+#+options: H:1 num:t toc:nil
+
+* Scores of Quiz Week 11
+\\
+- *Quiz for Week 11* Distribution:
+|------------------------+---+---+---+---+---+---+--------|
+| Score                  | 0 | 1 | 2 | 3 | 4 | 5 | Missed |
+|------------------------+---+---+---+---+---+---+--------|
+| Section *4* Count (22) |   |   | 4 | 1 | 4 | 8 | 5      |
+|------------------------+---+---+---+---+---+---+--------|
+| Section *6* Count (24) |   |   | 1 | 5 | 3 | 5 | 10     |
+|------------------------+---+---+---+---+---+---+--------|
+
+* Lab 11 Specific Requirements
+- cscheckin: 
+    - *Source Programs* only: *Lab11Sec6.tar*
+    - *tar -cvf Lab11Sec6.tar youMainName.cpp robot.h world.h*
